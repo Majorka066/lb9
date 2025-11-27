@@ -1,16 +1,73 @@
-# React + Vite
+# 📘 README.md — Каталог фильмов (Movie Search)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Название проекта
+**Мини-проект: Каталог фильмов (Movie Search)**  
+React-приложение для поиска фильмов через OMDb API.
 
-Currently, two official plugins are available:
+## 🌐 Пример использованного API-запроса
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Поиск фильмов по названию:
+```
+https://www.omdbapi.com/?apikey=73eff1f9&s=avatar
+```
 
-## React Compiler
+Загрузка подробной информации по ID фильма:
+```
+https://www.omdbapi.com/?apikey=73eff1f9&i=tt0499549
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🖼 Скриншоты работы приложения
+*(Замените на свои реальные скриншоты)*
 
-## Expanding the ESLint configuration
+```
+![Поиск фильмов](screenshots/search.png)
+![Список фильмов](screenshots/list.png)
+![Модальное окно](screenshots/modal.png)
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 🧠 Ответы на вопросы
+
+## 1. Что делает useEffect в вашем приложении?
+
+В моём приложении `useEffect` отвечает за отправку запроса к API OMDb каждый раз, когда изменяется состояние `query` (строка поиска). Он загружает список фильмов и обновляет состояние приложения.
+
+## 2. Какие состояния вы использовали и зачем?
+
+| Состояние | Назначение |
+|----------|------------|
+| `query` | Строка запроса пользователя |
+| `movies` | Массив найденных фильмов |
+| `selectedMovie` | Фильм, выбранный для модального окна |
+| `loading` | Индикатор загрузки данных |
+| `error` | Сообщение об ошибке API |
+
+## 3. Где ИИ помог, а где пришлось разбираться самому?
+
+### 🤖 ИИ помог:
+- в создании структуры проекта  
+- генерации компонентов  
+- объяснении работы useEffect  
+- оптимизации API-запросов  
+- написании UI и модального окна  
+
+### 🧑‍💻 Сам разбирался:
+- установка и запуск Vite  
+- подключение API-ключа  
+- исправление ошибок  
+- изучение документации OMDb  
+- логика отображения модалки  
+
+## 4. Что из документации API было важнее всего?
+
+- Правильный формат запросов (`s=` и `i=`)  
+- Обязательное наличие `apikey`  
+- Формат ответа JSON  
+- Обработка ошибок через `Response: "False"`  
+
+# 🎯 Итог
+
+README оформлен в соответствии с требованиями:  
+✔ Название проекта  
+✔ Примеры API-запросов  
+✔ Скриншоты (место под них)  
+✔ Ответы на все вопросы  
