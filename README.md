@@ -17,13 +17,10 @@ https://www.omdbapi.com/?apikey=73eff1f9&i=tt0499549
 ```
 
 ## 🖼 Скриншоты работы приложения
-*(Замените на свои реальные скриншоты)*
 
-```
-![Поиск фильмов](screenshots/search.png)
-![Список фильмов](screenshots/list.png)
-![Модальное окно](screenshots/modal.png)
-```
+<img width="1907" height="903" alt="image" src="https://github.com/user-attachments/assets/4055f0dd-e701-4a7f-9d74-111fa7b92bda" />
+<img width="1905" height="909" alt="image" src="https://github.com/user-attachments/assets/dfb413f2-04a3-4aed-8d44-099c105f5297" />
+<img width="1898" height="905" alt="image" src="https://github.com/user-attachments/assets/b25bc264-714a-48aa-b49a-21b1e91bbaf9" />
 
 # 🧠 Ответы на вопросы
 
